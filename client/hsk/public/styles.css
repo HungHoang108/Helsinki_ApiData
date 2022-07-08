@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #eee;
+    padding: 0 16px;
+    text-align: center;
+  }
+
+  h1 {
+      padding-top: 20px;
+  }
+
+  form {
+      margin-top: 20px;
+      margin-bottom: 40px;
+  }
+
+  form input {
+  width: 50%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+
+form button {
+    /* position: absolute;
+    right: 18px;
+    bottom: -18px; */
+    background: #f5ba13;
+    color: #fff;
+    border: none;
+    /* border-radius: 10%; */
+    width: 50px;
+    height: 29px;
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); */
+    cursor: pointer;
+    outline: none;
+  }
+
+
+
+  .resultBox {
+      border-radius: 8px;
+      background-color: #e6e1ce;
+      margin-bottom: 10px;
+      /* float: left;
+      margin-right: 10px; */
+     /* text-align: center; */
+      /* width: 60%; */
+
+  }
+
+  .resultConent {
+      text-align: left;
+  }
+
+  /* Styling the search from result button */
+
+  /* .searchfromresult {
+      background-color: #143dad;
+  } */
