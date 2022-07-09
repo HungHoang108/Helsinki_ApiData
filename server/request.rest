@@ -5,5 +5,5 @@ GET https://open-api.myhelsinki.fi/v2/places/?tags_search=Vietnamese
 POST http://localhost:9000/
 
 {
-    "tag" : "hello"
+    "tag" : "Korean"
 }

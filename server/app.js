@@ -17,7 +17,7 @@ app.use(cors());
 app.post(("/"), (req, res)=>{
   const clientQuery = req.body.tag
   
-  const url = `https://open-api.myhelsinki.fi/v2/places/?tags_search=${clientQuery}`
+  const url = `https://open-api.myhelsinki.fi/v1/places/?tags_search=${clientQuery}`
     
   https.get(url, function(response){
  
@@ -61,7 +61,7 @@ app.post(("/events"), (req, res)=>{
 app.post(("/activities"), (req, res)=>{
   const clientQuery = req.body.tag
   
-  const url = `https://open-api.myhelsinki.fi/v2/activities/?tags_search=${clientQuery}`
+  const url = `https://open-api.myhelsinki.fi/v1/activities/?tags_search=${clientQuery}`
     
   https.get(url, function(response){
  
