@@ -10,8 +10,8 @@ body {
     text-align: center;
   }
 
-  h1 {
-      padding-top: 20px;
+  h1, h2 {
+      padding-top: 40px;
   }
 
   form {

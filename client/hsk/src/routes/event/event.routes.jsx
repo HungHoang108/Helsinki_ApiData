@@ -15,7 +15,10 @@ const Event = () => {
 
   return (
     <div>
-        <h1>Search for events in the city</h1>
+        <h2>Search for events in Helsinki</h2>
+        <br />
+        <h5>Some sample search tags: Harrastuspassi (Helsinki), helmet, games, Events
+          , Pupils, Helsinki, Vantaa, Senior citizens </h5>
         <SearchBar/>
         <FilterBar/>
         {status ? <FilterResult/> : <Result/>}

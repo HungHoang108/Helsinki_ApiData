@@ -14,7 +14,10 @@ const Place = () => {
   setRoute(location.pathname)
   return (
     <div>
-        <h1>Search for places in Helsinki</h1>
+        <h2>Search for Restaurants, Bars, Cafe,..etc in Helsinki</h2>
+        <br />
+        <h5>Some sample search tags: Japanese, Vietnamese, Organic, 
+        Vegetarian, StreetFood, Lunch, AliPay </h5>
         <SearchBar />
         <FilterBar />
         {status ? <FilterResult/> : <Result/>}

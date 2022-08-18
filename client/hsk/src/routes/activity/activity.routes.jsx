@@ -13,7 +13,11 @@ const Activity = () => {
   setRoute(location.pathname)
   return (
     <div>
-        <h1>Search for activities in Helsinki</h1>
+        <h2>Search for events in Helsinki</h2>
+        <br />
+        <h5>Sample search tags: sauna, bike tour, outdoor recreation, guidance, 
+        daytrip, nature, kayaking
+           </h5>
         <SearchBar/>
         <FilterBar/>
         {status ? <FilterResult/> : <Result/>}

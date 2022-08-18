@@ -2,10 +2,33 @@
     background-color: #143dad ;
     margin: auto -16px;
     padding: 16px 32px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
     color: white;
   } */
+.header-box {
+  position: relative;
+  
+}
 
-  .navigation {
-    columns: white;
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #edbc1ccb ;
+  margin: auto -16px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+
+}
+
+.navigation {
+  margin: 30px;
+}
+
+.route {
+    text-decoration: none;
+    padding-left: 10px;
   }
+
+.header-signup {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}

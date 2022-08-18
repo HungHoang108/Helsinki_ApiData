@@ -7,31 +7,41 @@ import './header.styles.css'
 function Header(){
 
     return (
-        <Fragment>
-        <div className="header">
+        <div className="header-box">
+        <div className="header header-fixed">
             <div className="navigation">
-                <Link to='/'>
+                <Link className="route" to='/'>
                 Home
                 </Link>
             </div>
             <div className="navigation">
-                <Link to='/'>
+                <Link className="route" to='/'>
                 Place
                 </Link>
             </div>
             <div className="navigation">
-                <Link to='/events'>
+                <Link className="route" to='/events'>
                   Event
                 </Link>
             </div>
             <div className="navigation">
-                <Link to='/activities'>
+                <Link className="route" to='/activities'>
                   Activity
                 </Link>
             </div>
+            <div className="navigation">
+                <Link className="route" to='/favourate'>
+                  Favourate
+                </Link>
+            </div>
         </div>
+            <div className="header-signup">
+                <Link className="route" to='/signup'>
+                  SIGN UP
+                </Link>
+            </div>
             <Outlet />
-        </Fragment>
+        </div>
     )
 }
 

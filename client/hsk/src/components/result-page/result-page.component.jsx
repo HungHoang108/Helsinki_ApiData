@@ -4,12 +4,11 @@ import './result-page.styles.css'
 
 const Result = () => {
     const {result} = useContext(SearchTagContext)
-    result.map(placeData => {
-        console.log(placeData.description.images[0].url)
-    })
+
   return (
     <div>
         {result.map((placeData, index)=>{
+
 
             try {
                 return (
@@ -18,13 +17,13 @@ const Result = () => {
                         <div className="resultConent">
                             <h1>{placeData.name.fi}</h1>
                             
-                            {/* <p><b>Website:</b> <a href='{placeData.info_url}'>{placeData.info_url}</a></p> */}
+                            {/* {placeData.description.images[0].url ?  <img className='result-page-img' src={placeData.description.images[0].url} alt={placeData.name.fi} /> : null} */}
                             <a href='{placeData.info_url}'>{placeData.info_url}</a>
                             <p><b>Address:</b> {placeData.location.address.street_address}, {placeData.location.address.postal_code}, {placeData.location.address.locality}</p>
                             <p><b>Description:</b> {placeData.description.body}</p>
-                            {placeData.description.images[0]?.url ? 
-                            <img className='result-page-img' src={placeData.description.images[0].url} alt={placeData.name.fi} /> :
-                            null}
+                            
+                            {/* <img className='result-page-img' src={imageUrl ? imageUrl : "nat-2.jpg"} alt={placeData.name.fi} />  */}
+                            
                             {/* <img className='result-page-img' src={placeData.description.images[0].url} alt={placeData.name.fi} /> */}
                             
                         </div>
