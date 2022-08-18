@@ -3,7 +3,7 @@
 The app using Helsinki open API data to allow users search for places, events and incoming activities in the city
 using Reactjs in the frontend and Nodejs/express in the backend.
 
-##To run the application
+## To run the application
 
 1. Clone the repository
 2. Install the dependencies
