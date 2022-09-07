@@ -4,7 +4,7 @@ import axios from "axios"
 
 
 const SearchBar = () => {
-    const {tagQuery, settagQuery, setResult, route} = useContext(SearchTagContext)
+    const {tagQuery, settagQuery, setResult, route, setStatus} = useContext(SearchTagContext)
 
     function handleTag(event){
         const {name, value} = event.target
@@ -24,6 +24,7 @@ const SearchBar = () => {
           console.log(error)})
     
         event.preventDefault();
+        setStatus(false)
    
     }
 
@@ -39,7 +40,6 @@ const SearchBar = () => {
             value= {tagQuery.tag}
           />
           <button onClick={searchNow}>Search</button>
-          {/* <input type="text" /> */}
         </form>
     </div>
   )

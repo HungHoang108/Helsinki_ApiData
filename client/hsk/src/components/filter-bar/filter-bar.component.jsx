@@ -1,6 +1,8 @@
 import {React, useContext} from 'react'
 import { SearchTagContext } from '../../context/search-tag/search-tag.context';
 
+import './filter-bar.styles.css'
+
 const FilterBar = () => {
     const { result, setStatus, setFilterResult} = useContext(SearchTagContext)
 
@@ -9,10 +11,10 @@ const FilterBar = () => {
         const inputforfilter = event.target.value.toLowerCase();
         const newPlaceArray = result.filter((resultfilter)=>{ //filter will return a new array which meet the condition
           return resultfilter.name.fi.toLowerCase().includes(inputforfilter) 
-          // use another usestate to set new filtered results, then use the state to return the filter result
         })
         setFilterResult(newPlaceArray)
         setStatus(true)
+        // inputforfilter == null? setStatus(false) : ;
       }
 
   return (
@@ -21,6 +23,7 @@ const FilterBar = () => {
             <input
             placeholder="filter results"  
             onChange={handlefilter}
+            className="filter-bar"
             />
             <button className="searchfromresult">Find</button>
         </form>

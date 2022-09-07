@@ -29,17 +29,17 @@ function Header(){
                   Activity
                 </Link>
             </div>
-            <div className="navigation">
+            {/* <div className="navigation">
                 <Link className="route" to='/favourate'>
                   Favourate
                 </Link>
-            </div>
+            </div> */}
         </div>
-            <div className="header-signup">
+            {/* <div className="header-signup">
                 <Link className="route" to='/signup'>
                   SIGN UP
                 </Link>
-            </div>
+            </div> */}
             <Outlet />
         </div>
     )

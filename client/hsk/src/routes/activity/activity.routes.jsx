@@ -2,7 +2,6 @@ import {React, useContext} from 'react'
 import SearchBar from '../../components/search-bar/search-bar.component'
 import FilterBar from '../../components/filter-bar/filter-bar.component'
 import FilterResult from '../../components/filter-result/filter-result.component'
-import Result from '../../components/result-page/result-page.component'
 import { SearchTagContext } from '../../context/search-tag/search-tag.context'
 import { useLocation } from 'react-router-dom';
 
@@ -20,7 +19,7 @@ const Activity = () => {
            </h5>
         <SearchBar/>
         <FilterBar/>
-        {status ? <FilterResult/> : <Result/>}
+        {/* {status ? <FilterResult/> : <Result/>} */}
     </div>
   )
 }
