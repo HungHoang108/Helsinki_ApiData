@@ -8,30 +8,21 @@ using Reactjs in the frontend and Nodejs/express in the backend.
 1. Clone the repository
 2. Install the dependencies
 - Install Node.js
-- Install the package concurrently by running the below command at the root folder:
 
-```
-cd client
-npm install
-```
+- Because I didn't structure the code well from the beginning, therefore you may need to install some extra codes :)
 
-- Install its dependencies for the front-end:
+cd to each of these directory hsk, src (inside client), and server, then run:
 ```
-cd client/hsk
 npm install
 ```
-- Install its dependencies for the back-end:
-```
-cd ..
-cd server
-npm install
-```
-3. Finally, we can now run the application
-- On first terminal window to server directory, run: 
+3. Finally, we can now run the app.
+- In server directory and run:
 ```
 node app.js
 ```
-- On second terminal window to client/hsk directory, run:
+- In client/hsk directory, run:
 ```
 npm start
 ```
+
+That's it :) !
