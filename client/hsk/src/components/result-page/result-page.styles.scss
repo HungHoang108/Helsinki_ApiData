@@ -1,7 +1,6 @@
 .result-page-container {
     display: flex;
     justify-content: center;
-    background-color: white;
     .result-page-subcontainer {
         max-width: fit-content;
         display: grid;
@@ -20,7 +19,9 @@
             grid-template-columns: 1fr 1fr;
         }
     
-
+        .img-result-page {
+            width: 100%;
+        }
             
         
     }
