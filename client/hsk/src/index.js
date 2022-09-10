@@ -5,9 +5,10 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import { SearchTagProvider } from './context/search-tag/search-tag.context';
 
-const rootElement = document.getElementById('root');
+// const rootElement = document.getElementById('root');
 
-render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <React.StrictMode>
     <BrowserRouter>
      <SearchTagProvider>
@@ -15,6 +16,16 @@ render(
       </SearchTagProvider>
     </BrowserRouter>
   </React.StrictMode>,
-  rootElement
 );
+
+// render(
+//   <React.StrictMode>
+//     <BrowserRouter>
+//      <SearchTagProvider>
+//       <App />
+//       </SearchTagProvider>
+//     </BrowserRouter>
+//   </React.StrictMode>,
+//   rootElement
+// );
 

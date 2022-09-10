@@ -17,14 +17,15 @@ const SearchBar = () => {
       }
 
       function searchNow(event) {
-
+        event.preventDefault();
+        setStatus(false)
         axios.post(`http://localhost:9000${route}`, tagQuery)
         .then(response => setResult(response.data))
         .catch(error =>{
           console.log(error)})
     
-        event.preventDefault();
-        setStatus(false)
+        
+        
    
     }
 

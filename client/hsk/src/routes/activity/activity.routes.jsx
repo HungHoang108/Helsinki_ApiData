@@ -1,16 +1,20 @@
-import {React, useContext} from 'react'
+import {React, useContext, useEffect} from 'react'
 import SearchBar from '../../components/search-bar/search-bar.component'
 import FilterBar from '../../components/filter-bar/filter-bar.component'
-import FilterResult from '../../components/filter-result/filter-result.component'
 import { SearchTagContext } from '../../context/search-tag/search-tag.context'
 import { useLocation } from 'react-router-dom';
 import ActivityResult from '../../components/result-page/activity/activity-result-page.component'
+import ActivityFilter from '../../components/filter-result/filter-activity/activity.filter.component'
 
 const Activity = () => {
   const location = useLocation()
 
   const {status, setRoute} = useContext(SearchTagContext)
-  setRoute(location.pathname)
+
+  useEffect(()=>{
+    setRoute(location.pathname)
+  }, [])
+  
   return (
     <div>
         <h2>Search for events in Helsinki</h2>
@@ -20,7 +24,7 @@ const Activity = () => {
            </h5>
         <SearchBar/>
         <FilterBar/>
-        {status ? <FilterResult/> : <ActivityResult/>}
+        {status ? <ActivityFilter/> : <ActivityResult/>}
     </div>
   )
 }
