@@ -80,6 +80,6 @@ app.post(("/activities"), (req, res)=>{
 
 })
 
-app.listen(process.env.PORT ||9000, (req, res)=>{
+app.listen(process.env.PORT || 9000, (req, res)=>{
     console.log("Running on 9000 port")
 })
